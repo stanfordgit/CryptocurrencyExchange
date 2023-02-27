@@ -1,0 +1,63 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Убираем внешние отступы */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
+}
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

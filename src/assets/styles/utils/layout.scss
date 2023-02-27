@@ -1,0 +1,12 @@
+html {
+  min-width: 320px;
+}
+body {
+  background: white;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: $color-text-black;
+}
+a,
+span {
+  transition: color 0.2s ease;
+}
